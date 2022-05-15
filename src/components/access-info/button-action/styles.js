@@ -14,7 +14,7 @@ export const Main = styled.div`
         cursor: pointer;
         display: flex;
         justify-content: center;
-
+        margin: 30px 0;
         :hover {
             color: white;
             background-color: #d62828;

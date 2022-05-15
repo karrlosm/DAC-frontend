@@ -41,7 +41,7 @@ export const Owner = () => {
                  placeholder="Idade" id="age" type="number"></InputArea>
             </InputContent>
 
-            <ButtonAction onClick={() => handleCreateButton()}/>
+            <ButtonAction onClick={() => handleCreateButton()} text='criar'/>
         </ Main>
     );
 }

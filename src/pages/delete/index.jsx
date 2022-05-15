@@ -7,7 +7,7 @@ import {Main} from './styles'
 import {Product} from './products'
 import {Owner} from './owner'
 
-export const AddInfo = () => {
+export const DeleteInfo = () => {
     const navigate = useNavigate();
     const [type, setType] = useState('none');
 
@@ -19,7 +19,7 @@ export const AddInfo = () => {
     return (
         <Main>
             <h1>
-                ADICIONAR DADOS
+                EXCLUIR DADOS
             </h1>
 
             <select value={type} id="type-info" onChange={e => handleChange(e)}>

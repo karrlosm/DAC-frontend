@@ -39,7 +39,7 @@ export const Product = () => {
                 <InputArea placeholder="CPF do proprietário" id="cpf"></InputArea>
             </InputContent>
 
-            <ButtonAction onClick={() => handleCreateButton()} />
+            <ButtonAction onClick={() => handleCreateButton()} text='criar'/>
         </ Main>
     );
 }
