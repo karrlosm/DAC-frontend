@@ -4,10 +4,10 @@ export const Main = styled.div`
     background-color: darkblue;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
+    justify-content: center;
     min-height:100vh;
+    color: white;
 
     & > h1{
         padding-bottom: 20px;
@@ -16,10 +16,19 @@ export const Main = styled.div`
         padding-bottom: 50px;
     }
 
-    & > nav {
+    & > div{
         width: 320px;
-        button {
-            margin-bottom: 20px;
-        }
+    }
+`;
+
+export const InputContent = styled.div`
+    padding-bottom: 25px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > label {
+        font-size: 16px;
     }
 `;
