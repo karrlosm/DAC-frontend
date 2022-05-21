@@ -9,11 +9,13 @@ export const Home = () => {
     return (
         <Main>
             <h1>owner and products</h1>
+            <h2>home</h2>
             <nav>
                 <ButtonAction onClick={() => navigate('/add')} text='adicionar dados'/>
                 <ButtonAction onClick={() => navigate('/read')} text='ver dados'/>
                 <ButtonAction onClick={() => navigate('/edit')} text='editar dados'/>
                 <ButtonAction onClick={() => navigate('/delete')} text='excluir dados'/>
+                <ButtonAction onClick={() => navigate('/auth')} text='sair'/>
             </nav>
         </Main>
     )
