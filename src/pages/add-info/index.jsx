@@ -12,8 +12,7 @@ export const AddInfo = () => {
     const [type, setType] = useState('none');
 
     function handleChange(e) {
-        setType(e.target.value); 
-        console.log(type);
+        setType(e.target.value);
     }
 
     return (
