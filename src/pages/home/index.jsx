@@ -15,7 +15,6 @@ export const Home = () => {
                 <ButtonAction onClick={() => navigate('/read')} text='ver dados'/>
                 <ButtonAction onClick={() => navigate('/edit')} text='editar dados'/>
                 <ButtonAction onClick={() => navigate('/delete')} text='excluir dados'/>
-                <ButtonAction onClick={() => navigate('/auth')} text='sair'/>
             </nav>
         </Main>
     )

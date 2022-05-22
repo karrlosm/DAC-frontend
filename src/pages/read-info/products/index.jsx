@@ -7,7 +7,7 @@ export const Products = (props) => {
     return (
         <Main>
             <h1>products</h1>
-            {products && products.map((product) => (
+            {products && products.length > 0 ? products.map((product) => (
                 <ProductBox>
                     <BoxRow>
                         <span className='title'>
@@ -26,7 +26,10 @@ export const Products = (props) => {
                         </span>
                     </BoxRow>
                 </ProductBox>
-            ))}
+            )) : 
+            <h1>
+                nada para ver
+            </h1>}
         </ Main>
     );
 }

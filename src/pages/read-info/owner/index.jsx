@@ -7,7 +7,7 @@ export const Owner = (props) => {
     return (
         <Main>
             <h1>owners</h1>
-            {owners && owners.map((owner) => (
+            {owners && owners.length > 0 ? owners.map((owner) => (
                 <OwnerBox>
                     <BoxRow>
                         <span className='title'>
@@ -26,7 +26,10 @@ export const Owner = (props) => {
                         </span>
                     </BoxRow>
                 </OwnerBox>
-            ))}
+            )): 
+            <h1>
+                nada para ver
+            </h1>}
         </ Main>
     );
 }

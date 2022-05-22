@@ -6,38 +6,18 @@ import {Owner} from './owner';
 import {Products} from './products';
 import {Main} from './styles';
 
-export const ReadInfo = () => {
+export const EditInfo = () => {
     const navigate = useNavigate();
     const [type, setType] = useState('none');
-    const [data, setData] = useState();
 
     function handleChange(e) {
         setType(e.target.value);
     }
 
-    const getData = async () => {
-        await axios.get(`http://localhost:8080/api/${type}`)
-        .then(response => {
-            console.log(response.data)
-            setData(response.data)
-        }).catch(() => {
-            alert('NÃO FOI POSSÍVEL CONSULTAR OS DADOS')
-        })
-    }
-
-    useEffect(() => {
-        if (type ==='none') {
-            setData(null);
-        } else {
-            setData([]);
-            getData();
-        }
-    },[type])
-
     return (
         <Main>
             <h1>
-                VER DADOS
+                EDITAR DADOS
             </h1>
 
             <select value={type} id="type-info" onChange={e => handleChange(e)}>
@@ -50,10 +30,10 @@ export const ReadInfo = () => {
                     <h1>nenhum tipo selecionado</h1>
                 }
                 {type === 'owner' && 
-                    <Owner owners={data}/>
+                    <Owner/>
                 }
                 {type === 'product' && 
-                    <Products products={data}/>
+                    <Products />
                 }
                 <ButtonAction onClick={() => navigate('/')} text='voltar'/>
             </div>
